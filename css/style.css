@@ -1,0 +1,85 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif !important;
+	background: url('../img/body-bg.jpg')
+	no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.form-control{
+	background-color: transparent !important;
+	border: none !important;
+	border-bottom: 2px solid #000000 !important;
+}
+.form-white{
+	background-color: transparent !important;
+	border: none !important;
+	border-bottom: 2px solid #fff !important;
+}
+.form-black{
+	background-color: transparent !important;
+	border: none !important;
+	border-bottom: 2px solid #000000 !important;
+}
+.label{
+	color: #fff !important;
+}
+input{
+	background-color: transparent !important;
+}
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+  }
+.btn{
+	background-color: #fff !important;
+	border-radius: 20px !important;
+	color: #000000 !important;
+	font-weight: 700 !important;
+}
+.utama{
+	min-width: 1250px !important;
+	min-height: 650px;
+}
+.kiri{
+	border-radius: 2% 0px 0px 2% !important;
+	background-color: #fff;
+	opacity: 0.8;
+}
+.kanan{
+	border-radius: 0px 2% 2%  0px !important;
+	background-color: #E67E2E;
+	opacity: 0.8;
+}
+@media only screen and (max-width:770px){
+	.utama{
+		min-width: 250px !important;
+		min-height: 450px !important;
+	}
+	.kiri{
+		border-radius: 0px !important;
+
+	}
+	.kanan{
+		border-radius: 0px !important;
+	}
+	.center{
+		position: absolute;
+		top: 12%;
+		left: 15%;
+		-webkit-transform: translate(-10%, -10%);
+	  }
+}

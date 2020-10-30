@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tes Front End</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="center">
+        <div class="row utama">
+          <div class="col-md-6 kiri">
+            <h4 class="text-primary font-weight-bold">General Information</h4>
+            <div class="col s12">
+              <div class="col s12">
+                <div class="form-group">
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option selected>Title</option>
+                    <option>Businessman</option>
+                    <option>Secretary</option>
+                    <option>Reporter</option>
+                  </select>
+                </div>
+              </div>
+              <div class="input-field col s6">
+                <input
+                  id="first_name"
+                  type="text"
+                  class="validate form-black"
+                />
+                <label for="first_name">First Name</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="last_name" type="text" class="validate form-black" />
+                <label for="last_name">Last Name</label>
+              </div>
+              <div class="col s12">
+                <div class="form-group">
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option selected>Position</option>
+                    <option>Director</option>
+                    <option>Manager</option>
+                    <option>Employee</option>
+                  </select>
+                </div>
+              </div>
+              <div class="input-field col s12">
+                <input id="company" type="text" class="validate form-black" />
+                <label for="company">Company</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 kanan">
+            <h4 class="text-light font-weight-bold">Contact Details</h4>
+            <div class="col s12">
+              <div class="input-field col s12 text-light">
+                <input id="address" type="text" class="validate form-white" />
+                <label for="address" class="text-light">Address</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="zip_code" type="text" class="validate form-white" />
+                <label for="zip_code" class="text-light">Zip Code</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="place" type="text" class="validate form-white" />
+                <label for="place" class="text-light">Place</label>
+              </div>
+              <div class="col s12">
+                <div class="form-group">
+                  <select
+                    class="form-control form-white text-light"
+                    id="country"
+                  >
+                    <option selected class="text-dark">Country</option>
+                    <option class="text-dark">Director</option>
+                    <option class="text-dark">Manager</option>
+                    <option class="text-dark">Employee</option>
+                  </select>
+                </div>
+              </div>
+              <div class="input-field col s6">
+                <input id="code" type="text" class="validate form-white" />
+                <label for="code" class="text-light">Code + </label>
+              </div>
+              <div class="input-field col s6">
+                <input id="phone" type="text" class="validate form-white" />
+                <label for="phone" class="text-light">Phone Number</label>
+              </div>
+              <div class="input-field col s12 text-light">
+                <input id="email" type="email" class="validate form-white" />
+                <label for="email" class="text-light">Your Email</label>
+              </div>
+              <div class="col s2">
+                <button
+                  data-target="modal1"
+                  class="btn modal-trigger mb-4"
+                  onclick="modal()"
+                >
+                  Register
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>Register Confirmation</h4>
+        <p>A bunch of text</p>
+      </div>
+      <div class="modal-footer">
+        <a
+          href=""
+          data-target="modal1"
+          class="btn modal-trigger mb-4"
+          onclick="closeModal()"
+        >
+          OK
+        </a>
+      </div>
+    </div>
+    <!--  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".modal");
+        var instances = M.Modal.init(elems, options);
+      });
+
+      //   Modal
+      function modal() {
+        $(".modal").modal();
+      }
+      function closeModal() {
+        $(".modal").hide();
+        $(".modal-backdrop").hide();
+      }
+      //   Get Api
+      let url = "https://restcountries.eu/rest/v2/all";
+      var country = {};
+      fetch(url)
+        .then((res) => res.json())
+        .then((out) => {
+          document.getElementById("country").append(out);
+          console.log(out);
+        })
+        .catch((err) => {
+          throw err;
+        });
+    </script>
+  </body>
+</html>
